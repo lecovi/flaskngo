@@ -1,0 +1,14 @@
+<p>Hi {{ username }},</p>
+<p> You ask for a change in your email address, you just need to confirm your
+email address clicking in the link below.</p>
+<p>To confirm your account please <a href="
+{{ url_for('auth.change_email', email_token=email_token, _external=True) }}
+">click here</a>.</p>
+
+<p>Alternatively, you can paste the following link in your browser's address bar:</p>
+<p>{{ url_for('auth.change_email', email_token=email_token, _external=True) }}</p>
+<br>
+<p>Best regards,<br>
+{{ application }} Team.</p>
+<br>
+<p><small>Note: replies to this email address are not monitored.</small></p>
