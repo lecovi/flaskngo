@@ -1,0 +1,28 @@
+"""
+    {{ package_name }}.auth.routes
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    {{ description }}.
+
+    :copyright: (c) {{ year }} by Leandro E. Colombo Viña <<@LeCoVi>>.
+    :author: {{ author }} <{{ mail_user }} at bitson.com.ar>.
+    :license: AGPL, see LICENSE for more details.
+"""
+# Standard lib imports
+# Third-party imports
+# BITSON imports
+from flask import Blueprint
+
+{{ package_name }} = Blueprint('{{ package_name }}', __name__, template_folder='templates/', url_prefix='/{{ package_name }}')
+
+
+@{{ package_name }}.route('/', methods=['GET', 'POST'])
+def index():
+    """ View function which handles ....
+
+        Using HTTP GET ....
+        Using HTTP POST ....
+
+        :param first: first parameter needed.
+        :returns: response in JSON format
+    """

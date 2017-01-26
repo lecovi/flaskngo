@@ -1,0 +1,194 @@
+@page {
+    size: A4 portrait;
+    margin: 5cm 2cm 5cm 2cm;
+    padding: 0cm;
+
+
+    @top-left-corner {
+        content: ""; /* has to be specified! */
+        margin-top:1cm;
+
+    }
+
+	@top-left {
+		width: 30%;
+		content: "";
+        margin-top: 1cm;
+        padding: 0;
+        background-repeat: no-repeat;
+		background-position: center;
+        background-image: url('../img/club.png');
+		background-size: contain; /* 5cm, cover or 100%: scale bg image, retains img ratio */
+
+	}
+
+	@top-right {
+		width: 30%;
+		content: "";
+        margin-top:1cm;
+		vertical-align: middle;
+		font-family: sans-serif;
+		font-weight: bold;
+		font-size: 0.7cm;
+		color: white;
+		text-align: center;
+        background: url('../img/logo_ecsa.png');
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: contain;
+
+		}
+
+	@top-right-corner {
+		content: " ";
+
+        margin-top:1cm;
+	}
+
+	@bottom-center {
+		width: 100%;
+		content: "Página " counter(page) " of " counter(pages);
+		vertical-align: bottom;
+        text-align: right;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+		font-size: 12px;
+		color:black;
+        margin-bottom:0.2cm;
+	}
+}
+
+@media all {
+
+    .report-title{
+        font-family: "Helvetica Neue", Helvetica, Arial, serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: left;
+        color: black;
+		clear: both;
+        margin-bottom:10px;
+    }
+
+    .report-event-description{
+        font-family: "Helvetica Neue", Helvetica, Arial, serif;
+        font-size: 17px;
+    }
+
+    .report-event-date{
+    float: left;
+    font-family: "Helvetica Neue", Helvetica, Arial, serif;
+    font-size: 14px;
+    }
+
+	.report-info-table {
+		width:100%;
+		text-align: left;
+		clear: both;
+	}
+
+    .report-info-table th {
+        text-align:center;
+        font-weight:bold;
+        color:#000;
+        font-size:30px;
+        font-family: "Helvetica Neue", Helvetica, Arial, serif;
+    }
+
+    .report-info-table tr {
+        background-color:transparent;
+    }
+
+    .report-info-table td{
+        width:25%;
+        background-color:transparent;
+        font-size: 12px;
+        font-family: "Helvetica Neue", Helvetica, Arial, serif;
+    }
+
+    .report-info-table td.left {
+        width:25%;
+        text-align:left;
+
+    }
+
+    .report-info-table td.right {
+        width:25%;
+        text-align:right;
+        font-weight:bold;
+    }
+
+    .report-info-table td.center {
+        font-size: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .content{
+        margin-top:15%;
+        font-family:"Helvetica Neue", Helvetica, Arial, serif;
+        font-size: 10px;
+        width:100%;
+    }
+
+    .report-data-table {
+        page-break-after: always;
+        font-family: "Helvetica Neue", Helvetica, Arial, serif;
+        font-size:12px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        border: 2px solid black;
+        color:black;
+        border-collapse: collapse;
+    }
+
+    .report-data-table td.th {
+        text-align:center;
+        font-weight:bold;
+        font-size: 15px;
+        color: black;
+        border-bottom: 1px solid black;
+        border-left: 1px dotted black;
+    }
+
+    .report-data-table td.tf-left{
+        text-align: right;
+        font-weight:bold;
+        background:beige;
+        border-top: 1px solid black;
+    }
+
+    .report-data-table td.tf-right{
+        text-align: center;
+        font-weight: bold;
+        background: beige;
+        border-top: 1px solid black;
+
+    }
+
+    .report-data-table td.left {
+        text-align:left;
+        font-style:italic;
+    }
+
+    .report-data-table tr.impar {
+        background: beige;
+        border-bottom: 0.5px dotted beige;
+        border-top: 0.5px dotted beige;
+
+    }
+
+    .report-data-table tr.par{
+        background: transparent;
+    }
+
+    .report-data-table tr {
+        background-color:transparent;
+    }
+
+    .report-data-table td{
+        border-left: 1px dotted black;
+        background-color:transparent;
+        text-align:center;
+    }
+}

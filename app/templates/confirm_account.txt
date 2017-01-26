@@ -1,0 +1,12 @@
+Hi {{ username }},
+Welcome to {{ application }}!
+
+Your new account is almost ready to use, you just need to confirm your email
+address clicking in the link below:
+
+{{ url_for('auth.confirm_email', email_token=email_token, _external=True) }}
+
+Best regards,
+{{ application }} Team.
+
+Note: replies to this email address are not monitored.
