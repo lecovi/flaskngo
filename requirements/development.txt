@@ -21,7 +21,7 @@ ForgeryPy==0.1
 httpie==0.9.9
 imagesize==0.7.1
 itsdangerous==0.24
-Jinja2==2.9.4
+Jinja2==2.11.3
 kombu==4.0.2
 logutils==0.3.3
 Mako==1.0.6
