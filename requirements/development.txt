@@ -10,7 +10,7 @@ click==6.7
 colorama==0.3.7
 coverage==4.3.4
 docutils==0.13.1
-Flask==0.12
+Flask==1.0
 Flask-Cors==3.0.2
 Flask-HTTPAuth==3.2.1
 Flask-Mail==0.9.1
